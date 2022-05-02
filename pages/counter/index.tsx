@@ -4,7 +4,7 @@ import Counter from '../../components/counter'
 const CounterPage = () => {
   return <>
     <Head>
-      <link rel="stylesheet" href="/counter.css"/>
+      <link rel="stylesheet" href="counter.css"/>
     </Head>
     <Counter/>
   </>
