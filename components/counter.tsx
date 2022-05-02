@@ -1,4 +1,4 @@
-import { FC, FormEvent, Fragment, InputHTMLAttributes, useEffect, useRef, useState } from 'react'
+import { FC, FormEvent, Fragment, InputHTMLAttributes, useEffect, useLayoutEffect, useRef, useState } from 'react'
 
 const useTitle = (title: string) => {
   useEffect(() => {
@@ -64,6 +64,8 @@ type TimerFormProps = {
 }
 
 const TimerForm: FC<TimerFormProps> = ({ timerStartMs, onStart }) => {
+  useTitle('Countdown timer')
+
   const [startHours, startMinutes, startSeconds] = parseMs(timerStartMs)
 
   const [hours, setHours] = useState(startHours)
@@ -251,8 +253,6 @@ const Timer = () => {
 }
 
 const Counter = () => {
-  useTitle('Countdown timer')
-
   return <main>
     <h1>Countdown timer</h1>
     <Timer/>
