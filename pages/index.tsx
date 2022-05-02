@@ -10,6 +10,12 @@ const routes = [
     linkToTask: 'https://frontendeval.com/questions/countdown-timer',
     about: 'Create a countdown timer that notifies the user',
   },
+  {
+    name: 'Analog clock',
+    path: '/analog-clock',
+    linkToTask: 'https://frontendeval.com/questions/analog-clock',
+    about: 'Create an analog clock with hour, minute, and second hands. Each of the hands should be accurate to the browser\'s local timezone and update once per second.',
+  },
 ]
 
 

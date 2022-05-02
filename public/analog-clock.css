@@ -1,0 +1,103 @@
+* {
+    font-family: monospace;
+    box-sizing: border-box;
+}
+
+:root {
+    --clock-size: 100px;
+    --seconds-width: 1px;
+    --seconds-length: 45px;
+    --minutes-width: 2px;
+    --minutes-length: 40px;
+    --hours-width: 4px;
+    --hours-length: 30px;
+}
+
+main {
+    border: 1px solid black;
+    margin: 16px auto;
+    width: 450px;
+    padding: 0 16px 16px;
+}
+
+label {
+    align-items: center;
+    display: flex;
+}
+
+.clocks-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    justify-content: space-between;
+}
+
+h2 {
+    text-align: center;
+}
+
+.clock {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border: 1px solid black;
+    border-radius: 50px;
+    position: relative;
+    box-sizing: content-box;
+}
+
+.clock-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    background: black;
+}
+
+.clockface {
+    position: relative;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+}
+
+.num {
+    position: absolute;
+    font-size: 12px;
+}
+
+.hand {
+    position: absolute;
+    transition: transform 0.01s;
+    border-radius: 2px 2px 10px 10px;
+}
+
+.seconds {
+    width: var(--seconds-width);
+    height: var(--seconds-length);
+    background: red;
+    transform-origin: calc(var(--seconds-width) / 2) var(--seconds-length);
+    left: calc(50px - var(--seconds-width) / 2);
+    top: calc(var(--clock-size) / 2 - var(--seconds-length));
+}
+
+.minutes {
+    width: var(--minutes-width);
+    height: var(--minutes-length);
+    background: blue;
+    transform-origin: calc(var(--minutes-width) / 2) var(--minutes-length);
+    left: calc(50px - var(--minutes-width) / 2);
+    top: calc(var(--clock-size) / 2 - var(--minutes-length));
+}
+
+.hours {
+    width: var(--hours-width);
+    height: var(--hours-length);
+    background: black;
+    transform-origin: calc(var(--hours-width) / 2) var(--hours-length);
+    left: calc(50px - var(--hours-width) / 2);
+    top: calc(var(--clock-size) / 2 - var(--hours-length));
+}

@@ -1,4 +1,4 @@
-import { FC, FormEvent, Fragment, InputHTMLAttributes, useEffect, useLayoutEffect, useRef, useState } from 'react'
+import { FC, FormEvent, Fragment, InputHTMLAttributes, useEffect, useRef, useState } from 'react'
 
 const useTitle = (title: string) => {
   useEffect(() => {
