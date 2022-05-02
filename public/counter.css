@@ -1,0 +1,47 @@
+* {
+    font-family: monospace;
+    box-sizing: border-box;
+}
+
+main {
+    border: 1px solid black;
+    margin: 16px auto;
+    width: 300px;
+    padding: 0 16px 16px;
+}
+
+.container {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 128px 64px 64px auto;
+}
+
+.time-container {
+    display: grid;
+    grid-template-columns: 36px 8px 36px 8px 36px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+label {
+    display: none;
+}
+
+input {
+    width: 36px;
+    text-align: center;
+}
+
+input:not(:last-of-type) {
+    margin-right: 4px;
+}
+
+.display-time-part {
+    text-align: center;
+}
+
+.finished {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
