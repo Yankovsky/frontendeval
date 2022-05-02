@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "deploy": "npm run build && next export && cp .nojekyll /out",
+    "deploy": "npm run build && next export && cp .nojekyll out/",
     "start": "next start",
     "lint": "next lint"
   },
