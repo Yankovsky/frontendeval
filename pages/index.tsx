@@ -20,7 +20,7 @@ const Home: NextPage = () => {
       <Head>
         <title>Frontendeval solutions</title>
         <meta name="description" content="Frontendeval solutions by Yankovsky"/>
-        <link rel="icon" href="/favicon.ico"/>
+        <link rel="icon" href="favicon.ico"/>
       </Head>
       <h1>Frontendeval solutions by Yankovsky</h1>
       <article>
