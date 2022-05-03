@@ -18,7 +18,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <a href={FRONTENDEVAL_QUESTIONS_PATH + problemId}>Problem statement</a>
       </p>
       <p>
-        <a href={GITHUB_REPO_PROBLEMS_PATH + problemId}>Solution source code</a>
+        <a href={`${GITHUB_REPO_PROBLEMS_PATH}${problemId}.tsx`}>Solution source code</a>
       </p>
       <Component {...pageProps} />
     </article>
