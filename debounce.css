@@ -1,0 +1,14 @@
+* {
+    font-family: monospace;
+    box-sizing: border-box;
+}
+
+main {
+    border: 1px solid black;
+    width: 300px;
+    padding: 0 16px 16px;
+}
+
+main div {
+    margin: 8px 0;
+}
