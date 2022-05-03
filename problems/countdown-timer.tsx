@@ -252,11 +252,11 @@ const Timer = () => {
   </>
 }
 
-const Counter = () => {
+const CountdownTimer = () => {
   return <main>
     <h1>Countdown timer</h1>
     <Timer/>
   </main>
 }
 
-export default Counter
+export default CountdownTimer

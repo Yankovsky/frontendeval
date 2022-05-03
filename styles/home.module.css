@@ -1,0 +1,21 @@
+.problems {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+}
+
+.problem {
+    padding: 0 10px;
+    border: 1px solid black;
+    text-decoration: inherit;
+    color: inherit;
+    transition: transform 0.1s;
+}
+
+.problem:hover {
+    transform: scale(1.03);
+}
+
+.problem + .problem {
+    margin-left: 10px;
+}

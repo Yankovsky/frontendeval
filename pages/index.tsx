@@ -1,23 +1,18 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Link from 'next/link'
+import { FC } from 'react'
+import styles from '../styles/home.module.css'
+import { Problem, problems } from '../problems'
 
-
-const routes = [
-  {
-    name: 'Counter',
-    path: '/counter',
-    linkToTask: 'https://frontendeval.com/questions/countdown-timer',
-    about: 'Create a countdown timer that notifies the user',
-  },
-  {
-    name: 'Analog clock',
-    path: '/analog-clock',
-    linkToTask: 'https://frontendeval.com/questions/analog-clock',
-    about: 'Create an analog clock with hour, minute, and second hands. Each of the hands should be accurate to the browser\'s local timezone and update once per second.',
-  },
-]
-
+const Problem: FC<{ problem: Problem }> = ({ problem }) => {
+  return <Link key={problem.path} href={problem.path}>
+    <a className={styles.problem}>
+      <h2>{problem.name}</h2>
+      <p>{problem.about}</p>
+    </a>
+  </Link>
+}
 
 const Home: NextPage = () => {
   return (
@@ -27,14 +22,19 @@ const Home: NextPage = () => {
         <meta name="description" content="Frontendeval solutions by Yankovsky"/>
         <link rel="icon" href="/favicon.ico"/>
       </Head>
-      <nav>
-        {routes.map(route => (
-          <Link key={route.path} href={route.path}>
-            <a>{route.name}</a>
-          </Link>
-        ))}
+      <h1>Frontendeval solutions by Yankovsky</h1>
+      <article>
+        <p>
+          Solutions for problems listed at <a href="https://frontendeval.com/">frontendeval</a>
+        </p>
+        <p>
+          Source code for this website and all of the solutions can be found here <a
+          href="https://github.com/Yankovsky/frontendeval">https://github.com/Yankovsky/frontendeval</a>
+        </p>
+      </article>
+      <nav className={styles.problems}>
+        {problems.map(problem => <Problem key={problem.id} problem={problem}/>)}
       </nav>
-      <div><a href="https://frontendeval.com/">https://frontendeval.com/</a></div>
     </>
   )
 }

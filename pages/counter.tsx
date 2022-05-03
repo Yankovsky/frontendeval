@@ -1,10 +1,10 @@
-import Counter from '../components/counter'
+import CountdownTimer from '../problems/countdown-timer'
 
-const CounterPage = () => {
+const CountdownTimerPage = () => {
   return <>
-    <link rel="stylesheet" href="counter.css"/>
-    <Counter/>
+    <link rel="stylesheet" href="countdown-timer.css"/>
+    <CountdownTimer/>
   </>
 }
 
-export default CounterPage
+export default CountdownTimerPage

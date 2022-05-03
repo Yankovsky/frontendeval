@@ -1,4 +1,4 @@
-import AnalogClock from '../components/analog-clock'
+import AnalogClock from '../problems/analog-clock'
 import Head from 'next/head'
 
 const AnalogClockPage = () => {
