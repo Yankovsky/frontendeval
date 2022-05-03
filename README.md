@@ -1,6 +1,7 @@
 # Frontendeval solutions by Yankovsky
 
-[https://yankovsky.github.io/frontendeval/](https://yankovsky.github.io/frontendeval/)
+[https://yankovsky.github.io/frontendeval/](Live website)
 
+Built with Next.js, React, Gtihub actions, and Github pages.
 
-[https://frontendeval.com/](https://frontendeval.com/)
+Problems provided by [https://frontendeval.com/](https://frontendeval.com/)
