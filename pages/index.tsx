@@ -28,8 +28,8 @@ const Home: NextPage = () => {
           Solutions for problems listed at <a href="https://frontendeval.com/">frontendeval</a>
         </p>
         <p>
-          Source code for this website and all of the solutions can be found here <a
-          href="https://github.com/Yankovsky/frontendeval">https://github.com/Yankovsky/frontendeval</a>
+          Source code for this website and all of the solutions can be found at <a
+          href="https://github.com/Yankovsky/frontendeval">Github</a>
         </p>
       </article>
       <nav className={styles.problems}>
