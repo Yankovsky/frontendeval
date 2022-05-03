@@ -1,7 +1,8 @@
 html,
 body {
-  padding: 0 128px;
-  margin: 0;
+  margin: 0 auto;
+  padding: 0 4px;
+  max-width: 800px;
   font-family: monospace;
 }
 

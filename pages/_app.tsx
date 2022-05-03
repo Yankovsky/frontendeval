@@ -2,6 +2,7 @@ import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 import { useRouter } from 'next/router'
 import { problems } from '../problems'
+import Link from 'next/link'
 
 const GITHUB_REPO_PROBLEMS_PATH = 'https://github.com/Yankovsky/frontendeval/tree/main/problems/'
 const FRONTENDEVAL_QUESTIONS_PATH = 'https://frontendeval.com/questions/'
@@ -14,6 +15,9 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   if (problemId) {
     return <article>
+      <p>
+        <Link href='/'><a>← back to problems list</a></Link>
+      </p>
       <p>
         <a href={FRONTENDEVAL_QUESTIONS_PATH + problemId}>Problem statement</a>
       </p>

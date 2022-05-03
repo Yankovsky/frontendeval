@@ -15,7 +15,7 @@
 
 main {
     border: 1px solid black;
-    width: 450px;
+    width: 440px;
     padding: 0 16px 16px;
 }
 
@@ -29,6 +29,17 @@ label {
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
     justify-content: space-between;
+}
+
+@media (max-width: 480px) {
+    main {
+        width: auto;
+    }
+    .clocks-container {
+        grid-template-columns: auto;
+        grid-template-rows: initial;
+        justify-content: space-around;
+    }
 }
 
 h2 {
